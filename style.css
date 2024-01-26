@@ -7,12 +7,12 @@
 }
 body {
   overflow-x: hidden;
-  height: 100%;
+  height: auto;
 }
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
+  height: auto;
 }
 
 a,
@@ -819,6 +819,9 @@ a:hover {
     height: 45%;
     margin: 0;
   }
+  .footer {
+    height: 25vh;
+  }
 }
 
 @media (max-width: 500px) {
@@ -874,6 +877,10 @@ a:hover {
 @media (max-width: 445px) {
   .about-title {
     font-size: 32px;
+  }
+  .footer-container {
+    padding: 0;
+    margin: 0;
   }
 }
 
