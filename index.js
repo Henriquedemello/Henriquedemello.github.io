@@ -8,4 +8,7 @@ function menuShow() {
   } else {
     menuMobile.classList.add("open");
   }
+  menuMobile.addEventListener("click", () => {
+    menuMobile.classList.remove("open");
+  });
 }
