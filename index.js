@@ -12,3 +12,17 @@ function menuShow() {
     menuMobile.classList.remove("open");
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let menuMobile = document.querySelector(".menu-mobile-links");
+  let closeMenu = document.querySelector(".header");
+  let myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting === false) {
+        menuMobile.classList.remove("open");
+      }
+    });
+  });
+
+  myObserver.observe(closeMenu);
+});
